@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <script language="JavaScript" charset="UTF-8" src="appstorelink.js"></script>
+
+    <style type="text/css" media="screen">
+      body { margin:50px 0px; padding:0px; text-align:center; }
+      #content { width:500px; margin:0px auto; text-align:left; padding:20px; border:1px solid #333; background-color:#eee; }
+      #content div { padding-top: 10px; }
+      #content fieldset { border:none; padding-top: 20px; }
+      label { font-weight: bold; display:block; float:left; width:175px; text-align:right; margin:0px 5px 0px 0px; }
+      center { padding: 20px }
+      #tolink_button { text-decoration:none; padding: 10px 15px; background: #88f; color: #fff; }
+      #result_container { height: 80px; border: 1px solid #aaa; margin: 5px; }
+      #result_container span { font-weight: bold; margin-left: 10px; padding-left: 5px; padding-right: 5px; position: relative; top: -20px; background: #eee; }
+      #result { text-align: center; }
+    </style>
+  </head>
+  <body>
+
+    <div id="content">
+
+      Fill out one or both of the following:
+
+      <fieldset>
+        <label for="company">Company Name:</label> 
+        <input name="company" id="company" type="text" size="40" autofocus="autofocus"> 
+
+        <br/> <br/>
+
+        <label for="appname">App Name:</label> 
+        <input name="appname" id="appname" type="text" size="40"> 
+
+        <br/> <br/>
+
+        <label for="apptype">App Type:</label>
+        <input type="radio" name="apptype" value="ios" checked> iOS
+        <input type="radio" name="apptype" value="mac"> Mac
+      </fieldset>
+
+      <center>
+        <a id="tolink_button" onclick="createLink();" href="javascript:void(0);" title="Create Link">Create Link</a>
+      </center>
+
+      <div id="result_container">
+        <span>Short app store link:</span>
+        <div id="result"></div>
+      </div>
+
+      <div>
+        Read more about short links here: <a href="https://developer.apple.com/library/ios/#qa/qa1633/_index.html">Technical Q&A QA1633</a>
+      </div>
+
+    </div>
+
+  </body>
+</html>

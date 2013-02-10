@@ -23,7 +23,7 @@ function applyRules(inputValue)
   workingValue = workingValue.replace(/&/g, 'and');
 
   // 5. Remove most punctuation 
-  workingValue = workingValue.replace(/[!¡"#\$%'\(\)\*\+,\\\-\.\/:;<=>¿?@\[\]\^_`{\|}~]/g, '');
+  workingValue = workingValue.replace(/[!¡"#\$%'\(\)\*\+,\\\-\.\/:;<=>¿?@\[\]\^_`{\|}~’]/g, '');
 
   // 6. Replace accented and other "decorated" characters (ü, å, etc.) with their elemental character (u, a, etc.)
   workingValue = workingValue.latinise();
